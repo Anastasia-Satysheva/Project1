@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Hiking & Hops</title>
+</head>
+
+<body class="animation">
+  <header class="row "> 
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <form id="form" class="row">
+          <div class="input-field  col s12 m4">
+            <select id="state" required>
+              <option value="" disabled selected>Choose a State</option>
+            </select>
+            <label>Select State</label>
+          </div>
+          <div class="input-field col s12 m2">
+            <input id="city" type="text" class="validate" pattern="[a-zA-Z]{3,64}" required />
+            <label for="city">City Name</label>
+          </div>
+          <div class="col s2 m2">
+            <button class=" waves-effect waves-light btn-small colorBtns" type="submit">Submit</button>
+          </div>
+  
+        </form>
+  
+      </div>
+  
+    </div>
+    <nav>
+      <div class="nav-wrapper">
+        <a class="brand-logo center">Hikes & Hops</a>
+        <div class="left ">
+          <button data-target="modal1" class="waves-effect waves-light  left-align btn modal-trigger colorBtns">
+            Search By City</button>
+        </div>
+        <div class="right">
+          <button class=" waves-effect waves-light btn-small colorBtns" onclick="getLocation();">Find Trails Near Me</button>
+        </div>
+      </div>
+    </nav>
+  
+  </header>
+
+
+  <div class="row">
+    <div class="col m4 s12" id="weatherData">
+      <div class="carousel">
+        <div class="carousel-item" id="day0Weather"></a>
+          <b id="day0Date"></b>
+          <p><img id="day0Icon"></img></p>
+          <p id="day0Desc"></p>
+          <p id="day0Temp"></p>
+          <p id="day0Hum"></p>
+        </div>
+        <div class="carousel-item" id="day1Weather"></a>
+          <b id="day1Date"></b>
+          <p><img id="day1Icon"></img></p>
+          <p id="day1Temp"></p>
+          <p id="day1Hum"></p>
+        </div>
+        <div class="carousel-item" id="day2Weather"></a>
+          <b id="day2Date"></b>
+          <p><img id="day2Icon"></img></p>
+          <p id="day2Temp"></p>
+          <p id="day2Hum"></p>
+        </div>
+        <div class="carousel-item" id="day3Weather"></a>
+          <b id="day3Date"></b>
+          <p><img id="day3Icon"></img></p>
+          <p id="day3Temp"></p>
+          <p id="day3Hum"></p>
+        </div>
+        <div class="carousel-item" id="day4Weather"></a>
+          <b id="day4Date"></b>
+          <p><img id="day4Icon"></img></p>
+          <p id="day4Temp"></p>
+          <p id="day4Hum"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m4 s12">
+      <ul class="collapsible" id="trailData"></ul>
+    </div>
+
+    <div class="col m4 s12" id="foodData">
+    </div>
+  </div>
+  
+
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

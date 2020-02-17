@@ -1,0 +1,186 @@
+header {
+  color: #ffffff;
+  height: 90px;
+  background-image: linear-gradient(-50deg, #637462 50%, #193c0d 50%);
+}
+
+.nav-wrapper {
+  background-image: linear-gradient(-50deg, #193c0d 50%, #637462 50%);
+}
+
+.tn-bg {
+  background-color: #193c0d;
+}
+
+.tn-bg-link {
+  background-color: #454955;
+}
+
+.landingpic {
+  background-image: url("assets/images/landingpage.jpeg");
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.collapsible-header{
+    background-color: #637462;
+    border-bottom: 1px solid#193C0D;
+}
+.tn-bg {
+  background-color: #193c0d;
+}
+.tn-bg-link {
+  background-color: #454955;
+}
+
+.landingpic {
+  /* background-image: url("assets/images/landingpage.jpeg");
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-size: 100% auto;
+  background-repeat: no-repeat; */
+  background: url("assets/images/landingpage.jpeg") no-repeat center center
+      fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.animation {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #748e54, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 7s ease-in-out infinite;
+  display: block;
+}
+
+.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+    color: white
+}
+
+.animation {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #748e54, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 7s ease-in-out infinite;
+  display: block;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+  
+}
+.container{
+  text-align: center;
+}
+
+.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.trailBody {
+  background: #454955;
+  color: white;
+}
+
+.trailHead {
+  background: #193C0D;
+  color: white;
+}
+
+.colorBtns {
+  background: #637462;
+}
